@@ -26,10 +26,8 @@ module.exports = {
     }
   },
   etherscan: {
-    apiKey: {
-      bscTestnet: BSCSCAN_API_KEY,
-      bscMainnet: BSCSCAN_API_KEY
-    },
+    // V2 API format - single API key
+    apiKey: BSCSCAN_API_KEY || "MFM3MHUQXKVD5WB97T62Q8P2G1TJQTR8A8",
     customChains: [
       {
         network: "bscMainnet",
@@ -42,5 +40,8 @@ module.exports = {
         urls: { apiURL: "https://api-testnet.bscscan.com/api", browserURL: "https://testnet.bscscan.com" }
       }
     ]
+  },
+  sourcify: {
+    enabled: false
   }
 };
