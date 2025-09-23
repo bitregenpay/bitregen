@@ -78,6 +78,8 @@ async function main() {
   console.log(
     `   npx hardhat verify --network ${hre.network.name} ${tokenAddress} \\`,
   );
+  console.log("\n🚀 For MAINNET deployment:");
+  console.log("   npx hardhat run scripts/deploy.js --network bscMainnet");
   console.log(`     "${totalSupply}" \\`);
   console.log(`     "${PRESALE}" \\`);
   console.log(`     "${ECOSYSTEM}" \\`);
