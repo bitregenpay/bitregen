@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRG Payment Gateway Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .demo-card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin: 1rem 0; }
+        .payment-form { display: grid; gap: 1rem; }
+        input, select, button { padding: 1rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem; }
+        button { background: #00b894; color: white; cursor: pointer; border: none; }
+        button:hover { background: #00a085; }
+        .feature { display: flex; align-items: center; margin: 0.5rem 0; }
+        .feature-icon { color: #00b894; margin-right: 1rem; font-size: 1.2rem; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .stat-card { background: #00b894; color: white; padding: 1.5rem; border-radius: 8px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; color: #00b894; margin-bottom: 2rem;">BRG Payment Gateway</h1>
+        
+        <div class="demo-card">
+            <h2>🚀 Revolutionary Payment Solutions</h2>
+            <p style="margin: 1rem 0;">Process payments globally with BitReGen (BRG) tokens - faster, cheaper, and more secure than traditional payment processors.</p>
+            
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>1-2%</h3>
+                    <p>Processing Fees</p>
+                </div>
+                <div class="stat-card">
+                    <h3>< 5 sec</h3>
+                    <p>Settlement Time</p>
+                </div>
+                <div class="stat-card">
+                    <h3>24/7</h3>
+                    <p>Global Operations</p>
+                </div>
+                <div class="stat-card">
+                    <h3>0</h3>
+                    <p>Chargebacks</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-card">
+            <h2>💳 Payment Demo</h2>
+            <div class="payment-form">
+                <input type="text" placeholder="Merchant Address (0x...)" id="merchantAddress">
+                <input type="text" placeholder="Order ID (e.g., ORDER-12345)" id="orderId">
+                <input type="number" placeholder="Amount in BRG" id="amount" step="0.01">
+                <button onclick="processPayment()">Process Payment with BRG</button>
+            </div>
+            <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">
+                * Demo only - Connect MetaMask and ensure you have BRG tokens
+            </p>
+        </div>
+
+        <div class="demo-card">
+            <h2>🎯 Key Features</h2>
+            <div class="feature">
+                <span class="feature-icon">⚡</span>
+                <span><strong>Instant Settlements:</strong> Payments settle in seconds, not days</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">💰</span>
+                <span><strong>Lower Fees:</strong> 1-2% vs 3-4% traditional processors</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🌍</span>
+                <span><strong>Global Reach:</strong> Accept payments from anywhere in the world</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🔒</span>
+                <span><strong>Secure:</strong> Blockchain-powered security and transparency</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📱</span>
+                <span><strong>Easy Integration:</strong> Simple APIs for any platform</span>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📊</span>
+                <span><strong>Real-time Analytics:</strong> Track payments and revenue live</span>
+            </div>
+        </div>
+
+        <div class="demo-card">
+            <h2>🏢 Perfect For</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li class="feature">
+                    <span class="feature-icon">🛒</span>
+                    <span>E-commerce stores</span>
+                </li>
+                <li class="feature">
+                    <span class="feature-icon">💼</span>
+                    <span>Freelancers & consultants</span>
+                </li>
+                <li class="feature">
+                    <span class="feature-icon">🎮</span>
+                    <span>Gaming platforms</span>
+                </li>
+                <li class="feature">
+                    <span class="feature-icon">🏪</span>
+                    <span>Small businesses</span>
+                </li>
+                <li class="feature">
+                    <span class="feature-icon">📱</span>
+                    <span>Mobile apps</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="demo-card" style="text-align: center;">
+            <h2>Ready to Get Started?</h2>
+            <p style="margin: 1rem 0;">Join the payment revolution with BRG tokens</p>
+            <button style="font-size: 1.2rem; padding: 1rem 2rem;">Start Accepting BRG Payments</button>
+        </div>
+    </div>
+
+    <script>
+        async function processPayment() {
+            const merchant = document.getElementById('merchantAddress').value;
+            const orderId = document.getElementById('orderId').value;
+            const amount = document.getElementById('amount').value;
+            
+            if (!merchant || !orderId || !amount) {
+                alert('Please fill all fields');
+                return;
+            }
+            
+            alert(`Demo Payment:\n\nMerchant: ${merchant}\nOrder: ${orderId}\nAmount: ${amount} BRG\n\nIn production, this would process through MetaMask!`);
+        }
+    </script>
+</body>
+</html>
