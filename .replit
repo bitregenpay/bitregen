@@ -25,5 +25,14 @@ args = "npx hardhat compile"
 [workflows.workflow.metadata]
 outputType = "console"
 
+[[workflows.workflow]]
+name = "Website Server"
+author = 40030998
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd website && python3 -m http.server 5000"
+
 [nix]
 channel = "stable-25_05"

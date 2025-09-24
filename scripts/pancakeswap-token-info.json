@@ -1,0 +1,14 @@
+
+{
+  "name": "BitReGen",
+  "symbol": "BRG",
+  "address": "0x33907a59cf1676FFDd4607ac2e7cF71be5A968ad",
+  "chainId": 56,
+  "decimals": 18,
+  "logoURI": "https://your-repl-name.replit.app/logo.svg",
+  "tags": [
+    "ecosystem",
+    "payment",
+    "sustainable"
+  ]
+}
