@@ -3,8 +3,6 @@ const hre = require("hardhat");
 async function main() {
   const totalSupply = hre.ethers.parseUnits("100000000", 18); // 100M BRG
 
-  // ⚠️ Replace these placeholder addresses with your actual wallet addresses
-  // Prefer multisig wallets for production deployments
   const PRESALE = "0xD72874a29469cDe43DE8bbb7Eed393C10B817169";
   const ECOSYSTEM = "0x26a87653550b33FEeb4d3a111dC3F3e6243697eb";
   const MARKETING = "0x8378267DE50489DE3f9454f0EcA9247fC6642b3a";
