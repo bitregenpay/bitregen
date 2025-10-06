@@ -3,8 +3,11 @@
 .DS_Store
 Thumbs.db
 
-attached_assets/
-docs/
+attached_assets
+docs
+website
+replit.md 
+hardhat.config.js
 
 # Node modules
 node_modules/
