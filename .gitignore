@@ -1,0 +1,58 @@
+
+# OS files
+.DS_Store
+Thumbs.db
+
+attached_assets/
+docs/
+
+# Node modules
+node_modules/
+
+# Replit/IDE
+.replit
+.vscode/
+.idea/
+replit.md
+
+# Build output directories
+dist/
+build/
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+*.log
+
+# Environment files (secret keys)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+
+# Hardhat specific
+artifacts/
+cache/
+typechain-types/
+coverage/
+coverage.json
+
+# Testing
+.nyc_output
+
+# Misc
+*.pem
+*.p12
+*.key
+*.swp
+*.swo
+*~
+
+# Temporary files
+.tmp/
+temp/
+
+# Config that may contain sensitive data
+hardhat.config.local.js
